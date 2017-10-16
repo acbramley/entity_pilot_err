@@ -50,7 +50,7 @@ class EntityReferenceRevisionItemNormalizer extends BaseEntityReferenceRevisionI
       if ($id = $entity->id()) {
         return [
           'target_id' => $id,
-          'target_revision_id' => $entity->getRevisionId(),
+          'target_revision_id' => $data['target_revision_id'],
         ];
       }
       return ['entity' => $entity];
